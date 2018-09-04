@@ -1,0 +1,156 @@
+<!DOCTYPE html>  
+<html lang="en">
+    
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet"> 
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>  
+
+    <title> WGHS Readers' Club</title>
+    
+        <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+    
+    </head>
+    
+<body>
+
+    <div class="sandpaper">
+                           <nav>
+   <div class="menu">
+     <ul>
+     <li><a  href="index.html"href="javascript:void(0)">Home</a></li>
+      <li><a href="events.html"href="javascript:void(0)">Events</a></li>
+      <li><a class="active"href="gallery1.html"href="javascript:void(0)">Gallery</a></li>
+      <li><a href="contact.html"href="javascript:void(0)">Contact</a></li>
+      </ul>
+       </div>
+     <div>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+        </nav>  
+        
+        <img src="IMG/Gallery/wood.png" alt="banner" width=100% class="banner">
+            
+        
+    <div>
+        <img class="galleryflowers" alt="flowers in corner" src="IMG/Gallery/CornerFlower.png" width=20%>
+    </div>
+
+        
+<div class="row">
+    <div class="column">
+    <a href="IMG/Gallery/holding.jpeg" alt="Readers' Club events" data-lightbox="gallery"><img class="fade" class="hover-shadow"  src="IMG/Gallery/holding.jpeg" alt="Readers' Club events" style="width:100%"/></a>
+     
+    <a href="IMG/Gallery/Janice.jpg" alt="Readers' Club events" data-lightbox="gallery"><img class="fade" class="hover-shadow" src="IMG/Gallery/Janice.jpg" alt="Readers' Club events" style="width:100%"/></a>
+  
+    <a href="IMG/Gallery/Nightlights.jpg" alt="Readers' Club events"data-lightbox="gallery"><img class="fade" class="hover-shadow" src="IMG/Gallery/Nightlights.jpg"  alt="Readers' Club events"style="width:100%"/></a>
+        
+    <a href="IMG/Gallery/poster.jpg"alt="Readers' Club events"data-lightbox="gallery"><img class="fade" class="hover-shadow" 
+    src="IMG/Gallery/poster.jpg" alt="Readers' Club events"style="width:100%"/></a>
+    </div>
+    
+<div class="column">
+    
+    <a href="IMG/Gallery/play1.jpg"alt="Readers' Club events" data-lightbox="gallery"><img class="fade" class="hover-shadow"
+         src="IMG/Gallery/play1.jpg" alt="Readers' Club events" alt="Readers' Club events"style="width:100%"/></a>  
+    
+    <a href="IMG/Gallery/play2.jpg"alt="Readers' Club events" data-lightbox="gallery"><img class="fade" class="hover-shadow"
+         src="IMG/Gallery/play2.jpg" alt="Readers' Club events" alt="Readers' Club events"style="width:100%"/></a>
+ 
+    <a href="IMG/Gallery/Shanay.jpg" alt="Readers' Club events"data-lightbox="gallery"><img class="fade" class="hover-shadow"
+         src="IMG/Gallery/Shanay.jpg" alt="Readers' Club events"style="width:100%"/></a>
+ 
+    <a href="IMG/Gallery/suvarnabook2.jpg"alt="Readers' Club events" data-lightbox="gallery"><img class="fade" class="hover-shadow" 
+    src="IMG/Gallery/suvarnabook2.jpg" alt="Readers' Club events" style="width:100%"/></a>
+   
+   </div>
+    
+    <div class="column">
+    <a href="IMG/Gallery/suvarnabook.jpg"alt="Readers' Club events"data-lightbox="gallery"><img class="fade" class="hover-shadow" 
+    src="IMG/Gallery/suvarnabook.jpg" alt="Readers' Club events"style="width:100%"/></a>
+    
+    
+    <a href="IMG/Gallery/Twoholding.jpeg"alt="Readers' Club events" data-lightbox="gallery"><img class="fade" class="hover-shadow" src="IMG/Gallery/Twoholding.jpeg" style="width:100%"/></a> 
+ 
+    <a href="IMG/Gallery/books.jpeg" alt="Readers' Club events"data-lightbox="gallery"><img class="fade" class="hover-shadow" 
+    src="IMG/Gallery/books.jpeg"alt="Readers' Club events" style="width:100%"/></a>
+        
+    <a href="IMG/Gallery/wonder.jpeg" alt="Readers' Club events"data-lightbox="gallery"><img class="fade" class="hover-shadow" 
+    src="IMG/Gallery/wonder.jpeg"alt="Readers' Club events" style="width:100%"/></a>
+   </div>
+
+
+    <div class="column">
+    <a href="IMG/Gallery/bookpage.jpg" alt="Readers' Club events"data-lightbox="gallery"><img class="fade" class="hover-shadow" 
+    src="IMG/Gallery/bookpage.jpg" alt="Readers' Club events"style="width:100%"/></a>
+   
+    <a href="IMG/Gallery/bookmark.jpeg" alt="Readers' Club events"data-lightbox="gallery"><img class="fade" class="hover-shadow" 
+    src="IMG/Gallery/bookmark.jpeg"alt="Readers' Club events" style="width:100%"></a>
+  
+    <a href="IMG/Gallery/all.jpg"alt="Readers' Club events" data-lightbox="gallery"><img class="fade" class="hover-shadow" 
+    src="IMG/Gallery/all.jpg" alt="Readers' Club events" style="width:100%"/></a>
+        
+    <a href="IMG/Gallery/newbooks.jpg" alt="Readers' Club events" data-lightbox="gallery"><img class="fade" class="hover-shadow" 
+    src="IMG/Gallery/newbooks.jpg"alt="Readers' Club events" style="width:100%"/></a>
+   </div>
+    </div>
+    
+</div>
+<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+
+        <script>
+    
+    $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fade').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade in it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+    </script>
+ <script type="text/javascript">
+     
+    $(document).ready(function() {
+        $(".icon").on("click", function() {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+    </script>
+    
+    <script>
+    $(window).on("scroll", function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('brown');
+        }
+        else{
+            $('nav').removeClass('brown');
+        }
+    })
+    }
+    
+    </script>    
+    
+
+    </body>
+   

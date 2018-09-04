@@ -1,0 +1,106 @@
+<!DOCTYPE html>  
+<html lang="en">
+    
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">   
+    <title> WGHS Readers' Club</title>
+<link rel="stylesheet" href="caleandar-master/css/theme3.css">
+<script src="caleandar-master/js/caleandar.js"></script>
+         <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>  
+    </head>
+    
+<body>
+    <div>
+    <nav>
+     <ul>
+     <li><a href="index.html"href="javascript:void(0)">Home</a></li>
+      <li><a class="active"href="events.html"href="javascript:void(0)">Events</a></li>
+      <li><a href="gallery1.html"href="javascript:void(0)">Gallery</a></li>
+      <li><a href="contact.html"href="javascript:void(0)">Contact</a></li>
+      </ul>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    
+        </nav> 
+    </div>
+    
+    <img class="banner" alt="banner" src="IMG/Event/EVENTS.png" >
+<div class="Notices">
+    <h2>Notices</h2>
+        <p>General meeting on the 24th of September in H2</p>
+    </div>
+        <div class="events">
+        <h2>Events Coming up...</h2>
+        <p>Sunday Club Member Lunch</p>
+   </div>
+    
+    <div id="caleandar"></div>
+    <!--This is where new events can be added to the calendar, the month of the date needs to be one mont before E.g if want content to be displayed on 2018,9,10, the input date should be 2018,8,10-->
+<script>
+    var events = [
+    {'Date': new Date(2018, 8, 10), 'Title': 'Theme: Fantasy', }, 
+    {'Date': new Date(2018, 8, 24), 'Title': 'General Meeting'},
+    {'Date': new Date(2018, 9, 7), 'Title': 'Club members lunch'},
+];
+</script>
+    
+    <script>
+    var settings = {
+    Color: '',
+    LinkColor: '',
+    NavShow: true,
+    NavVertical: false,
+    NavLocation: '',
+    DateTimeShow: true,
+    DateTimeFormat: 'mmm, yyyy',
+    DatetimeLocation: '',
+    EventClick: '',
+    EventTargetWholeDay: false,
+    DisabledDays: [],
+    ModelChange: model,
+};
+</script>
+    
+    <script>
+    var element = document.getElementById('caleandar');
+caleandar(element, events, settings);
+    </script>
+    
+<!--calendar ended-->
+        <script>
+    function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+    </script>
+    
+<script type="text/javascript">
+     
+    $(document).ready(function() {
+        $(".icon").on("click", function() {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+    </script>
+    
+    <script>
+    $(window).on("scroll", function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('brown');
+        }
+        else{
+            $('nav').removeClass('brown');
+        }
+    })
+    }
+    
+    </script> 
+    </body>

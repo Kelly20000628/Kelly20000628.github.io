@@ -1,0 +1,423 @@
+
+body, html {
+    height:100%;
+    background-image: url(IMG/Home/Background.png);
+}
+
+body{
+    margin:0;
+}
+
+/*Start of Homepage*/
+.sandpaper {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    position: absolute;
+    /* The image used */
+    background-image: url(IMG/Home/Background.png);
+    background-repeat:repeat;
+    
+}
+
+#singlewood{;
+    position:relative;
+    z-index:1;
+    margin-top: -2%;
+}
+
+.brown{
+    background-color: #924d2b;
+    position: absolute;
+    background-attachment: fixed;
+    top: 85%;
+    color:antiquewhite;
+    z-index: 0;
+}
+#homewood{
+    position: relative;
+    margin-top: 10%;
+    z-index: -1;
+}
+
+#introphoto{
+    position: absolute;
+  margin-top: -35%;
+margin-left: 2%;
+
+    
+}
+p{
+    margin-top:-35%;
+    margin-left: 40%;
+    font-size: 30px;
+    
+}
+
+
+.center{
+    width: 35%;
+    height: auto;
+    padding-top: 1%;
+    margin-top: 2%;
+    margin-left: 32%;
+}
+
+
+.woodonly{
+   width:100%;
+    position: absolute;
+    margin-top:120%;
+    display: inline;
+    z-index:3;
+    
+}
+
+
+@media screen and (max-width: 950px) {
+    .center{
+        width:40%;
+        margin-left: 30%;
+        margin-top: 8%;
+        transition:1s;
+    }
+    #introphoto{
+        width:42%;
+        margin-left:29%;
+        transition:1s;
+        margin-top:-37%;
+    }
+    #homewood{
+        margin-top:5%;
+    }
+    p{
+        margin:5%;
+        padding: 10px;
+        font-size: 20px;
+        transition:1s;
+    }
+    
+    .woodonly{ 
+    margin-top:200%;
+}
+}
+    
+/*End of Home page*/
+/*nav*/
+nav{
+    position:fixed;
+    width:100%;
+    z-index: 999;
+}
+
+nav ul{
+    list-style:none;
+    background:#b57347;
+    overflow:hidden;
+    color:#f6ae65;
+    padding:0;
+    text-align: center;
+    margin:0;
+    transition:1s;
+}
+
+nav.brown ul{
+    background:#b57347;
+}
+
+nav ul li{
+    display:inline-block;
+    padding:0 7%;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#f6ae65;
+    font-size:30px;
+    padding:0 7%;
+}
+
+nav ul li a:hover{
+    background: #7b371b;
+}
+
+.active{
+    background-color: #7b371b;
+}
+
+.icon{
+    width:100%;
+    background:#b57347;
+    text-align:right;
+    box-sizing:border-box;
+    padding:6px 24px;
+    cursor:pointer;
+    color:#f6ae65;
+    display:none;
+}
+
+@media screen and (max-width: 950px) {
+    nav ul{
+        max-height:0px;
+        background:#b57347;
+    }
+    nav.brown ul{
+        background:#b57347;
+    }
+    
+    .showing{
+        max-height:15em;
+    }
+
+    nav ul li{
+        box-sizing:border-box;
+        width:100%;
+        padding:5px 0;
+        text-align:center;
+        z-index:999;
+        position:relative;
+    }
+    
+    .icon{
+        display:block;
+    }
+}
+
+/*End of Nav*/
+.banner{
+    position: relative;
+    margin-top:1.5%; 
+    width:100%
+}
+
+@media screen and (max-width: 400px) {
+    .banner{
+        margin-top:7%;
+    }
+}
+
+* { box-sizing: border-box; }
+
+/*Events page*/
+
+div.Notices{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.Notices h2{
+    position: absolute;
+    color:#b57347;
+}
+
+.Notices p{
+    position: absolute;
+    margin-top:5%;
+    margin-left: 5%;
+    font-size:17px;
+    color:#b57347;
+}
+
+div.events{
+    margin-top: 15%;
+    margin-left:5%;
+}
+
+.events h2{
+    position:absolute;
+    color:#b57347;
+}
+
+.events p{
+    position:absolute;
+    font-size:17px;
+    color:#b57347;
+    margin-top: 5%;
+    margin-left:5%;
+}
+
+@media screen and (max-width: 950px) {
+    div.Notices h2{
+        margin-top: 0%;
+       position: relative;
+    }
+    .Notices p{
+        margin-top:-5%;
+         position: relative;   
+    }
+    
+    div.events h2{
+        margin-top:-10%;
+        position:relative;
+    }
+    .events p{
+        margin-top:-5%;
+    }
+}
+/*End of Events page*/
+
+/* gallery page*/
+.galleryflowers{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+}
+
+/* force scrollbar */
+html { overflow-y: scroll; 
+overflow-x: hidden;}
+
+.fade {
+  opacity: 0;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 115px;
+    margin-bottom: 20%;
+}
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+   
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 930px) {
+     .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+        transition: 2s;
+    }
+    .row{
+        padding: 18px;
+    }
+}
+@media screen and (max-width: 600px) {
+     .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        transition:2s;
+    }
+    
+}
+/*****End of Gallery page**/
+
+   /**contact**/
+    
+    #contactlogo{
+        position: absolute;
+        margin-top:6%;
+        margin-left: 43%;
+    }
+    
+.contactrow{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding:  15%;
+    margin-bottom: 20%;
+    margin-top:10%;
+    position:absolute;
+    margin-left: 8%;
+}
+
+.contactcolumn {
+    -ms-flex: 33.3%; /* IE10 */
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding-left:  10%;
+    padding-right:13%;
+    text-align: center;
+    margin-left: 16;
+}
+
+.contactcolumn img {
+    margin-bottom:30%;
+    margin-top:5%;
+    vertical-align: middle;
+    
+}
+   
+h6{
+    font-size:12px;
+    color:#b57347;
+}
+
+h7{
+    font-size: 12px;
+    color:#b57347;
+}
+
+@media screen and (max-width: 800px) {
+    #contactlogo{
+        margin-left: 40%;
+        margin-top: 10%;
+    } 
+    
+    .contactrow{
+        margin-top:20%;
+        margin-left:2%
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    #contactlogo{
+        margin-left: 28%;
+        margin-top: 10%;
+    } 
+    
+    .contactcolumn {
+        -ms-flex: 100%;
+        flex: 100%;
+         margin-top: 40%;
+        max-width: 100%;
+        transition:2s;
+         text-align: center;
+    }
+   .contactcolumn img {
+    margin-bottom:30%;
+    margin-top:5%;
+       margin-left: 5%;
+       margin-right:5%;
+    vertical-align: middle;
+    
+}
+    h6{
+        margin-top: -25%;
+        margin-left: 5%;
+    }
+    
+    h7{
+    font-size: 12px;
+    position:absolute;
+        margin-top: -5%;
+        margin-left:-10%;
+        margin-bottom: 10%;
+}
+    
+}

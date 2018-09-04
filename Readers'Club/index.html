@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">   
+               <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script> 
+        <title> WGHS Readers' Club</title>
+    </head>
+    
+<body>
+ 
+    <div class="sandpaper">
+       <!--Start of Navigation bar-->
+        <nav>
+   <div class="menu">
+     <ul>
+     <li><a class="active" href="index.html"href="javascript:void(0)">Home</a></li>
+      <li><a href="events.html"href="javascript:void(0)">Events</a></li>
+      <li><a href="gallery1.html"href="javascript:void(0)">Gallery</a></li>
+      <li><a href="contact.html"href="javascript:void(0)">Contact</a></li>
+      </ul>
+       </div>
+     <div>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+        </nav>  
+        <!--End of Navigation bar-->
+        
+        
+            <img src="IMG/Home/ReadersClub.png" height="90" class="center">
+        
+        <img id="singlewood" alt="single wood" src="IMG/Home/SingleWood.png" width="100%">
+    
+    <div class="brown">
+        <div><img id="homewood" alt="Wood background for photo"src="IMG/Home/homewood.png" width="100%">
+            <img id="introphoto" alt="Leaders holding sign"src="IMG/Home/Twoholding.jpeg" width="35%">
+            <p> Readers' club was formed in 2017 by six Yr 12 students who have passion in bringing the habit of reading to the school. The club is open to everyone and its' aim is to encourage and help people to find the joy of reading. During each Readers' Club meeting, members form together for book discussion.</p>
+        </div>
+        </div>
+        
+    </div>
+    
+   
+    <div class="woodonly">
+    <img src="IMG/Home/woodonly.png"
+        alt="single wood" width="100%">
+   
+    </div>
+    
+    
+<script type="text/javascript">
+     
+    $(document).ready(function() {
+        $(".icon").on("click", function() {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+    </script>
+    
+    <script>
+    $(window).on("scroll", function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('brown');
+        }
+        else{
+            $('nav').removeClass('brown');
+        }
+    })
+        }
+    
+    </script>    
+    
+    </body>

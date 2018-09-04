@@ -1,0 +1,124 @@
+
+.cld-main{
+  width: 50%;
+    margin-top: -15%;
+    margin-bottom: 5%;
+    margin-left:45%;
+    position: absolute;
+}
+@media screen and (max-width: 930px) {
+    .cld-main{
+        width: 100%;
+        margin-top: 10%;
+        margin-left:auto;
+     }
+      .cld-number{
+      text-align: left;
+        font-size: 8px;
+    }
+      .cld-title{
+        font-size: 10px;
+        display: block;
+        margin: 0;
+        font-weight: normal;
+      }
+
+}
+.cld-main a{
+  color: #3F1A08;
+  text-decoration: none;
+  pointer-events: none;
+  cursor:default;
+}
+.cld-datetime{
+    position: relative;
+    width: 66%;
+    min-width: 100px;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #b57347;
+    color:bisque;
+  }
+  .cld-datetime .today{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center;
+  }
+  .cld-nav{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+  .cld-nav:hover{
+    cursor: pointer;
+      
+  }
+  .cld-nav:hover svg{
+    fill: #3F1A08;
+  }
+  .cld-rwd{
+    float: left;
+  }
+  .cld-fwd{
+    float: right;
+  }
+    .cld-nav svg:hover{
+
+    }
+.cld-labels, .cld-days{
+  padding-left: 0;
+}
+  .cld-label, .cld-day{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+  }
+  .cld-day{
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0;
+    height: 70px;
+    border: 1px solid #b57347;
+    overflow-y: auto;
+  }
+  .cld-day.clickable:hover{
+    cursor: pointer;
+  }
+  .cld-day.today{
+    border: 2px solid #3F1A08;
+  }
+  .cld-day.disableDay{
+    opacity: 0.5;
+  }
+  .cld-day.nextMonth, .cld-day.prevMonth{
+    opacity: 0.33;
+  }
+    .cld-number{
+      margin: 0;
+      text-align: left;
+        font-size: 18px;
+    }
+      .cld-title{
+        font-size: 12px;
+        display: block;
+        margin: 0;
+        font-weight: normal;
+      }
+      .cld-day:hover{
+        background: #f6ae65;
+          transition:0.3s;
+      }
+      .cld-number.eventday{
+        font-weight: bold;
+      }
+      .cld-number.eventday:hover{
+        background: #f6ae65;
+      }
+      .today .cld-number.eventday:hover{
+      }

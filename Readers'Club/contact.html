@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">   
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>   
+        <title> WGHS Readers' Club</title>
+    </head>
+    
+<body>
+
+ <nav>
+   <div class="menu">
+     <ul>
+     <li><a  href="index.html"href="javascript:void(0)">Home</a></li>
+      <li><a href="events.html"href="javascript:void(0)">Events</a></li>
+      <li><a href="gallery1.html"href="javascript:void(0)">Gallery</a></li>
+      <li><a class="active"href="contact.html"href="javascript:void(0)">Contact</a></li>
+      </ul>
+       </div>
+     <div>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+        </nav>   
+        
+  
+        <img src="IMG/Contact/logo.png" height="150" id="contactlogo">
+
+    
+    <div class="contactrow">
+   
+        <div class="contactcolumn">
+    <img alt="Janice Lim" src="IMG/Contact/Janice.png">
+    <h6>Janice Lim</h6> 
+    <h7>14062@westlakegirls.school.nz</h7>
+    <img alt="Kelly Lei"src="IMG/Contact/Kelly.png" height="100px">
+            <h6>Kelly Lei</h6> 
+            <h7>14063@westlakegirls.school.nz</h7>
+        </div>
+        
+<div class="contactcolumn">
+    <img alt="Scarlett Park"src="IMG/Contact/Scarlett.png">
+    <h6>Scarlett Park</h6> 
+    <h7>14081@westlakegirls.school.nz</h7>
+    <img alt="Shanay Ramphel"src="IMG/Contact/Shanay.png">
+    <h6>Shanay Ramphel</h6> 
+    <h7>14084@westlakegirls.school.nz</h7>
+        </div>
+<div class="contactcolumn">
+    <img alt="Suvarna Swaraj"src="IMG/Contact/Suvarna.png">
+    <h6>Suvarna Swaraj</h6> 
+    <h7>14321@westlakegirls.school.nz</h7>
+    <img alt="Yeonji Lee"src="IMG/Contact/Yeonji.png" height="90px">
+    <h6>Yeonji Lee</h6> 
+    <h7>14056@westlakegirls.school.nz</h7>
+        
+    </div>
+    </div>
+    
+<script type="text/javascript">
+     
+    $(document).ready(function() {
+        $(".icon").on("click", function() {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+    </script>
+    
+    <script>
+    $(window).on("scroll", function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('brown');
+        }
+        else{
+            $('nav').removeClass('brown');
+        }
+    })
+    }
+    
+    </script>   
+    
+    </body>
